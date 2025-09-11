@@ -15,34 +15,36 @@ header {
   border-bottom: 8px solid hsla(0, 0%, 60%, 1);
 }
 
-.title {
-  font-weight: 800;
-  font-style: ExtraBold;
-  font-size: 2rem;
-  line-height: 120%;
-  letter-spacing: 0%;
-}
-
-.intro-chunk {
-  max-width: 450px;
-  padding: 0 24px;
-}
-
-.intro-chunk p {
-  font-weight: 400;
-  font-style: Regular;
-  font-size: 1.25rem;
-  line-height: 150%;
-  letter-spacing: -0.5%;
-}
-
-.intro-chunk p:first-of-type {
-  margin-top: 48px;
-}
-
 .max-width-wrapper {
   max-width: 800px;
   margin: 0 auto;
+}
+
+.intro-chunk {
+  max-width: 415px;
+  /* Padding is here to indent with card text */
+  padding: 0 24px;
+}
+
+.title {
+  margin-top: 0;
+  margin-bottom: 48px;
+
+  font-size: 2rem;
+  line-height: 1.2;
+}
+
+p {
+  margin-bottom: 1rem;
+}
+
+p:last-child {
+  margin-bottom: 0;
+}
+
+.intro-chunk p {
+  font-size: 1.25rem;
+  line-height: 1.5;
 }
 
 main {
@@ -63,19 +65,15 @@ main {
   line-height: 150%;
   letter-spacing: 0%;
   margin-top: 16px;
-  margin-bottom: 16px;
 }
 
-.card p:last-child {
-  margin-bottom: 0;
-}
-
-.indented-heading {
+.card .indented-heading {
   background-color: hsla(45, 100%, 50%, 1);
   border-bottom: 8px solid hsla(45, 100%, 40%, 1);
   margin-left: -32px;
   padding: 16px 32px 15px;
   width: fit-content;
+  /* Kind of hack to change default margins of heading, looks coupled to layout */
   margin-top: 0;
   margin-bottom: 16px;
 }
